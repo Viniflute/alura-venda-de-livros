@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Livraria Online</title>
+</head>
+<body>
+    <header>
+        <h1>Livraria Online</h1>
+        <input type="text" id="search" placeholder="Pesquisar livros...">
+        <nav>
+            <ul>
+                <li><a href="#livros">Livros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="livros">
+            <h2>Livros Disponíveis</h2>
+            <div class="livro">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/5/57/O_Alquimista.jpg/250px-O_Alquimista.jpg" alt="O Alquimista">
+                <div class="livro-info">
+                    <h3>O Alquimista</h3>
+                    <p>Autor: Paulo Coelho</p>
+                    <p>Preço: R$ 29,90</p>
+                    <button onclick="adicionarAoCarrinho('O Alquimista', 29.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="livro">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/36/1984_%28George_Orwell%29.jpg/250px-1984_%28George_Orwell%29.jpg" alt="1984">
+                <div class="livro-info">
+                    <h3>1984</h3>
+                    <p>Autor: George Orwell</p>
+                    <p>Preço: R$ 34,90</p>
+                    <button onclick="adicionarAoCarrinho('1984', 34.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Adicione mais livros conforme necessário -->
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: contato@livrariaonline.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Livraria Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
